@@ -43,21 +43,18 @@ app.MapPost("/todo", async (Todo todo) =>
     await File.WriteAllTextAsync("todos.json", json);
 });
 
-app.MapDelete("/todo/{id}", async (string id) =>
+app.MapDelete("/todo/{id}", async (Guid id) =>
 {
-    var guidId = Guid.Parse(id);
-    var todoInList = todos.FirstOrDefault(t => t.Id == guidId);
-    if (todoInList == null) throw new NullReferenceException();
-    todos.Remove(todoInList);
-    var json = JsonSerializer.Serialize(todos);
-    //for (int i = 0; i < todos.Count; i++)
-    //{
-    //    if(todos[i].Id == guidId)
-    //    {
-    //        todos.Remove(todos[i]);
-    //    }
-    //}
-    await File.WriteAllTextAsync("todos.json", json);
+    //var guidId = Guid.Parse(id);
+    //var todoInList = todos.FirstOrDefault(t => t.Id == guidId);
+    //if (todoInList == null) throw new NullReferenceException();
+    //todos.Remove(todoInList);
+    //var json = JsonSerializer.Serialize(todos);
+    //await File.WriteAllTextAsync("todos.json", json);
+
+    todos.RemoveAll(it => it.Id == id);
 });
+
+
 
 app.Run();

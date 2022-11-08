@@ -1,17 +1,1 @@
-[
-  {
-    "Id": "2e7e239d-5ba0-4b58-83b7-0e4039dc5af7",
-    "Text": "learn more about backend",
-    "DoneDate": null
-  },
-  {
-    "Id": "62e763b2-4d3d-4cd2-a152-fde4d429dabb",
-    "Text": "find a job",
-    "DoneDate": null
-  },
-  {
-    "Id": "d54fe6c8-8b41-4e84-af25-9549042cb6a2",
-    "Text": "visit a friend",
-    "DoneDate": "2022-10-13T00:00:00+02:00"
-  }
-]
+[{"Id":"2e7e239d-5ba0-4b58-83b7-0e4039dc5af7","Text":"learn more about backend","DoneDate":null},{"Id":"d54fe6c8-8b41-4e84-af25-9549042cb6a2","Text":"visit a friend","DoneDate":"2022-10-13T00:00:00+02:00"},{"Id":"66de2e72-6872-44d6-8fd3-9027ec33b783","Text":"practise API","DoneDate":null}]
